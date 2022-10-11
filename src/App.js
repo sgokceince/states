@@ -15,11 +15,15 @@ function App() {
        <button onClick={() => setName("Gusta")}>change name</button>
        <button onClick={() => setAge(5)}>change age</button>
        <hr />
-
+       <br></br>
+        <h2>friends</h2>
        {
          friends.map((friend, index) => (
             <div key= {index}>{friend}</div>
-        ))}
+       ))}
+
+       <br />
+       <button onClick={() => setFriends([...friends, "Sümbül"])}>Add new friend</button>
 
     </div>
   );
